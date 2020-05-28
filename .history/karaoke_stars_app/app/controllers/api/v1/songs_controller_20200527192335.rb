@@ -1,6 +1,4 @@
 class Api::V1::SongsController < ApplicationController
-   
-
 
     def index 
         @songs = Song.all
@@ -42,4 +40,3 @@ class Api::V1::SongsController < ApplicationController
         params.require(:song).permit(:title)
     end
 end
-

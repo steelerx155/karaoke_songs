@@ -1,6 +1,9 @@
 class Api::V1::SongsController < ApplicationController
-   
 
+    def test
+        render json: {test: "success"}
+    end
+    
 
     def index 
         @songs = Song.all

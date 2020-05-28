@@ -1,6 +1,4 @@
 class Api::V1::SongsController < ApplicationController
-   
-
 
     def index 
         @songs = Song.all
@@ -33,7 +31,7 @@ class Api::V1::SongsController < ApplicationController
         @song = Song.find(params[:id])
         @song.delete
 
-        render json: @song.id
+        render json: {@song.id}
 
     end
 
@@ -42,4 +40,3 @@ class Api::V1::SongsController < ApplicationController
         params.require(:song).permit(:title)
     end
 end
-

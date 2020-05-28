@@ -1,6 +1,4 @@
 class Api::V1::SongsController < ApplicationController
-   
-
 
     def index 
         @songs = Song.all
@@ -43,3 +41,5 @@ class Api::V1::SongsController < ApplicationController
     end
 end
 
+
+/Users/randysteele/karaoke_stars_app/karaoke_stars_app
