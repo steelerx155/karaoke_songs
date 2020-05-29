@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Song.create([
-{title: "In case you didn't know"}, {title: "Lady"}, {title: "Don't wanna write this song"}
+{title: "In case you didn't know", genre: "country", title: "Lady", genre: "country", title: "Don't wanna write this song", genre: "country"}
 
 
 
