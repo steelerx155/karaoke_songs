@@ -8,13 +8,6 @@ class Songs {
 
     initBindAndEventListeners(){
         this.songsContainer = document.getElementById('songs-container')
-        this.songForm = document.getElementById('new-song-form')
-        this.songForm.addEventListener('submit', this.createSong)
-    }
-
-    createSong(){
-
-        console.log("creating songs")
     }
 
     fetchAndLoadSongs(){

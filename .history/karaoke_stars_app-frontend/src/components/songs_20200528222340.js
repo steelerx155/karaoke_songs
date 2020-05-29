@@ -8,13 +8,6 @@ class Songs {
 
     initBindAndEventListeners(){
         this.songsContainer = document.getElementById('songs-container')
-        this.songForm = document.getElementById('new-song-form')
-        this.songForm.addEventListener('submit', this.createSong)
-    }
-
-    createSong(){
-
-        console.log("creating songs")
     }
 
     fetchAndLoadSongs(){
@@ -32,6 +25,6 @@ class Songs {
     render() {
         const songsString = console.log(songsString)
         const songsContainer = document.getElementById('songs-container')
-        songsContainer.innerHTML = this.songs.map(song => song.renderLi()).join('')
+        songsContainer.innerHTML = this.songs.map(song => `<li>${song.title}</li>`).join('')
    }
 }
