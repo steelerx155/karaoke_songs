@@ -6,7 +6,6 @@ Rails.application.routes.draw do
       resources :songs
     end
 end
-end
 
 
 #   get '/test', to: 'application#test'
