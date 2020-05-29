@@ -1,4 +1,4 @@
-class Api::V1::SongsController < ApplicationController   
+class SongsController < ApplicationController   
 
 
     def index 
@@ -16,7 +16,6 @@ class Api::V1::SongsController < ApplicationController
 
     def create 
         @song = Song.create(song_params)
-        # binding.pry
         render json: @song
     end
 
@@ -37,7 +36,7 @@ class Api::V1::SongsController < ApplicationController
 
     private
     def song_params
-        params.require(:song).permit(:title)
+        params.require(:song).permit(:title, :genre)
     end
 end
 
