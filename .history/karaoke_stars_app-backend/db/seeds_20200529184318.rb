@@ -11,8 +11,8 @@
 
 
 # ])
-country = Genre.create(name: "country")
+
 
 Song.create(title: "In case you didn't know", genre: country)
-Song.create(title: "Lady", genre: country)
+Song.create(title: "Lady" ,genre: "country")
 Song.create(title: "Don't wanna write this song", genre:country)
