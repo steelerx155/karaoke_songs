@@ -13,10 +13,8 @@ class SongsAdapter {
         }
         return fetch(this.baseUrl, {
          method: 'POST',   
-         headers: {
-             'content-type': 'application/json'
-         },
          title: JSON.stringify({ song }),
+
         })
     }
     }

@@ -1,4 +1,5 @@
-class Api::V1::SongsController < ApplicationController   
+class Api::V1::SongsController < ApplicationController
+   
 
 
     def index 
@@ -16,7 +17,7 @@ class Api::V1::SongsController < ApplicationController
 
     def create 
         @song = Song.create(song_params)
-        # binding.pry
+        binding.pry
         render json: @song
     end
 
@@ -25,6 +26,7 @@ class Api::V1::SongsController < ApplicationController
         @song.update(song_params)
 
         render json: @song 
+
     end
 
     def destory

@@ -35,11 +35,9 @@ class Songs {
     }
 
     render() {
-        const songsArray = this.songs.map((note => `<li>${song.title}</li>`))
-        console.log(songsArray)
         const songsContainer = document.getElementById('songs-container')
-        // const songsString = console.log(songsString)
+        const songsString = console.log(songsString)
         // const songsContainer = document.getElementById('songs-container')
-        // songsContainer.innerHTML = this.songs.map(song => song.renderLi()).join('')
+        songsContainer.innerHTML = this.songs.map(song => song.renderLi()).join('')
    }
 }

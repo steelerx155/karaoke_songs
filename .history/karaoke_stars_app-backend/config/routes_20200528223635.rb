@@ -9,8 +9,8 @@ end
 end
 
 
-  # get '/test', to: 'application#test'
-
+  get '/test', to: 'application#test'
+end
 
 
 # Rails.application.routes.draw do

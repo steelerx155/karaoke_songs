@@ -1,5 +1,5 @@
 class App {
     constructor(){
-        this.songs = new Songs()
+        this.songs = new SongsAdapter
     }
 }

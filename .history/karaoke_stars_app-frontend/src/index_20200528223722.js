@@ -5,7 +5,7 @@ fetch(`${BACKEND_URL}/songs`)
 
 
 
-// const app = new App()
+const app = new App()
 
 
 

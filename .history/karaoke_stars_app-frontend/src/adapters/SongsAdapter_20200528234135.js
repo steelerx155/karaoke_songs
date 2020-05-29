@@ -17,6 +17,7 @@ class SongsAdapter {
              'content-type': 'application/json'
          },
          title: JSON.stringify({ song }),
+
         })
     }
     }

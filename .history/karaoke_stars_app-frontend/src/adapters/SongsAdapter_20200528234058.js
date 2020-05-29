@@ -14,9 +14,11 @@ class SongsAdapter {
         return fetch(this.baseUrl, {
          method: 'POST',   
          headers: {
+             'user-agent': 'Mozilla/4.0 MDN Example',
              'content-type': 'application/json'
          },
          title: JSON.stringify({ song }),
+
         })
     }
     }

@@ -7,17 +7,17 @@ class Songs {
     }
 
     initBindAndEventListeners(){
-        this.songsContainer = document.getElementById("songs-container")
+        this.songsContainer = document.getElementById('songs-container')
         this.newSongTitle = document.getElementById("new-song-title")
         this.songForm = document.getElementById("new-song-form")        
         this.songForm.addEventListener('submit', this.createSong.bind(this))
     }
 
     createSong(e){
-       
+        console.log(this)
         e.preventDefault()
         console.log("creating songs")
-       const result = this.newSongTitle.value
+       const value = this.newSongTitle.value
 
        this.createSong
     }
@@ -35,11 +35,9 @@ class Songs {
     }
 
     render() {
-        const songsArray = this.songs.map((note => `<li>${song.title}</li>`))
-        console.log(songsArray)
         const songsContainer = document.getElementById('songs-container')
-        // const songsString = console.log(songsString)
-        // const songsContainer = document.getElementById('songs-container')
-        // songsContainer.innerHTML = this.songs.map(song => song.renderLi()).join('')
+        const songsString = console.log(songsString)
+        const songsContainer = document.getElementById('songs-container')
+        songsContainer.innerHTML = this.songs.map(song => song.renderLi()).join('')
    }
 }
