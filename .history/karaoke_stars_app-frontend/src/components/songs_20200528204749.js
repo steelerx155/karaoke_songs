@@ -8,7 +8,7 @@ class Songs {
     }
     fetchAndLoadSongs(){
         this.adapter.getSongs().then(songs => {
-            songs.forEach(song => this.songs.push(song))
+            songs.forEach(song => this.song.push(song))
            return console.log(songs) 
         })
         .then(() => {
