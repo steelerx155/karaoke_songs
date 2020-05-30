@@ -6,7 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Song.create([
+# {title: "In case you didn't know" genre: , title: "Lady" genre:  title: "Don't wanna write this song" genre: }
 
+
+# ])
 country = Genre.create(name: "country")
 
 Song.create(title: "In case you didn't know", genre: country)

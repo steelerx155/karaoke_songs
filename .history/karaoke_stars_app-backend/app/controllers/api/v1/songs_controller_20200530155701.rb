@@ -1,4 +1,4 @@
-class SongsController < ApplicationController   
+class Api::V1::SongsController < ApplicationController   
 
 
     def index 
@@ -15,7 +15,7 @@ class SongsController < ApplicationController
 
 
     def create 
-        @song = Song.create(song_params)
+        song = Song.new(song_params)
         render json: @song
     end
 
