@@ -6,7 +6,7 @@ class API::V1::SongsController < ApplicationController
         options = {
             include: [:genre]
         }
-        render json: SongSerializer.new(@songs, options)
+        render json: SongSerializer.new(@songs)
     end
 
     def show

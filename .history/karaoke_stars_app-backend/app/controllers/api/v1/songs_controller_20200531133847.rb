@@ -3,10 +3,7 @@ class API::V1::SongsController < ApplicationController
 
     def index 
         @songs = Song.all
-        options = {
-            include: [:genre]
-        }
-        render json: SongSerializer.new(@songs, options)
+        render json: SongSerializer.new(@songs)
     end
 
     def show

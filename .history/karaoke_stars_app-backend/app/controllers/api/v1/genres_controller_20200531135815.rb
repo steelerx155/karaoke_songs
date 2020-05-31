@@ -3,7 +3,7 @@ class API::V1::GenresController < ApplicationController
     def index 
         @genres = Genre.all
         options = {
-            include: [:songs]
+            include: [:song]
         }
         render json: GenreSerializer.new(@genres, options)
     end

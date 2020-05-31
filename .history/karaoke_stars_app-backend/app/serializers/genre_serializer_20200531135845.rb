@@ -1,5 +1,5 @@
 class GenreSerializer
   include FastJsonapi::ObjectSerializer
   attributes :name
-  has_many :songs
+  has_many :song
 end
